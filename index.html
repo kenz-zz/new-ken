@@ -3,88 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenzz samp</title>
+    <title>Kenzz SAMP</title>
 
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Navbar -->
     <header class="navbar">
-    <div class="nav-content animate__animated animate__fadeInDown" id="nav-content">
-        <a href="/" style="text-decoration: none; color: inherit;">
-            <h1 class="logo">Kenzz SAMP</h1>
-        </a>
- 
-        <div class="nav-actions">
-            <button id="theme-toggle" class="icon-btn" title="Change Theme">
-                <i class="fa-solid fa-moon"></i>
-            </button>
-
-            <button id="search-btn" class="icon-btn" title="Search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </div>
-    </div>
-
-    <div class="search-container hidden" id="search-container">
-        <div class="search-input-wrapper">
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <input
-                type="text"
-                id="search-input"
-                placeholder="Search..."
-            >
-        </div>
-
-        <button id="close-search" class="icon-btn">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-    </div>
+        <div id="navbar-root"></div>
     </header>
 
+    <!-- Category -->
     <nav class="category-bar">
         <button class="cat-btn active" data-filter="all">All</button>
         <button class="cat-btn" data-filter="monetloader">Monetloader</button>
         <button class="cat-btn" data-filter="cleo">Cleo</button>
     </nav>
 
+    <!-- Content -->
     <main class="content">
-        <div id="script-container" class="script-grid">
-            <!-- Data Script Card akan di-render otomatis oleh JavaScript di sini -->
+
+        <div
+            id="script-container"
+            class="script-grid">
         </div>
+
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <a href="/" style="text-decoration: none; color: inherit;">
-                <h3 class="footer-logo">Kenzz SAMP</h3>
-                </a>
-                <p>Monetloader, cleo, and resource for GTA SA-MP Android.</p>
-            </div>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Community Rules</a>
-                <a href="#">DMCA</a>
-            </div>
-            <div class="footer-socials">
-                <a href="https://youtube.com/@KenzzYeTe" class="yt" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#" class="ig" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@kenzzyete" class="tt" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://discord.com/invite/SKCgURKkAt" class="dc" target="_blank" title="Discord"><i class="fa-brands fa-discord"></i></a>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 Kenzz SAMP. All rights reserved.</p>
-            </div>
-        </div>
+        <div id="footer-root"></div>
     </footer>
-    
+
+    <!-- Config Website -->
+    <script src="config.js"></script>
+
+    <!-- Main -->
     <script src="app.js"></script>
+
 </body>
 </html>
