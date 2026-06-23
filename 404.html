@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found - Kenzz SAMP</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="/style.css">
+    
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+
+    <style>
+        /* Agar layout sejajar dan tinggi minimal sama dengan layar */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Area 404: Mengisi sisa ruang kosong dan menengahkan konten secara presisi */
+        .not-found-container {
+            flex: 1; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Posisikan presisi di tengah vertikal */
+            align-items: center;     /* Posisikan presisi di tengah horizontal */
+            text-align: center;
+            /* Padding atas 84px untuk mengimbangi Navbar yang melayang, sisanya simetris */
+            padding: 250px 20px 100px 20px; 
+        }
+
+        /* Menggunakan Font Logo (Agero) untuk angka 404 */
+        .error-code {
+            font-family: 'Agero', sans-serif;
+            font-size: 8rem;
+            margin: 0;
+            line-height: 1;
+            color: var(--text-color);
+            text-shadow: 0 8px 30px var(--shadow-color);
+        }
+
+        .error-message {
+            font-size: 1.5rem;
+            margin-top: -10px;
+            margin-bottom: 10px;
+            color: #888888;
+            font-weight: 500;
+        }
+
+        /* Tampilan tombol 'Go back' */
+        .go-back-btn {
+            padding: 9px 25px;
+            background: rgba(108, 188, 255, 0.15);
+            backdrop-filter: blur(12px) saturate(150%);
+            -webkit-backdrop-filter: blur(12px) saturate(150%);
+            border: 1px solid rgba(108, 188, 255, 0.4);
+            border-radius: 25px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 8px 25px rgba(108, 188, 255, 0.2);
+        }
+
+        [data-theme="light"] .go-back-btn {
+            background: rgba(108, 188, 255, 0.25);
+            border: 1px solid rgba(108, 188, 255, 0.6);
+            color: #0056b3;
+            box-shadow: 0 6px 20px rgba(108, 188, 255, 0.3);
+        }
+
+        .go-back-btn:hover {
+            transform: translateY(-4px) scale(1.05);
+            background-color: var(--primary-color);
+            color: #121212;
+            box-shadow: 0 14px 40px rgba(108, 188, 255, 0.45);
+        }
+
+        [data-theme="light"] .go-back-btn:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR TANPA TOMBOL SEARCH -->
+    <header class="navbar">
+        <div class="nav-content" id="nav-content">
+            <a href="/" style="text-decoration: none; color: inherit;">
+                <h1 class="logo">Kenzz SAMP</h1>
+            </a>
+     
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" title="Change Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- KONTEN UTAMA 404 -->
+    <main class="not-found-container">
+        <h1 class="error-code">404</h1>
+        <p class="error-message">Page Not Found</p>
+        <a href="/" class="go-back-btn">Go home</a>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="/" style="text-decoration: none; color: inherit;">
+                    <h3 class="logo">Kenzz SAMP</h3>
+                </a>
+                <p>Monetloader, cleo, and resource for GTA SA-MP Android.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Community Rules</a>
+                <a href="#">DMCA</a>
+            </div>
+            <div class="footer-socials">
+                <a href="https://youtube.com/@KenzzYeTe" class="yt" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="ig" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@kenzzyete" class="tt" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://discord.com/invite/SKCgURKkAt" class="dc" target="_blank" title="Discord"><i class="fa-brands fa-discord"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Kenzz SAMP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT TEMA -->
+    <script>
+        const htmlDoc = document.documentElement;
+        const themeToggleBtn = document.getElementById('theme-toggle');
+
+        if(htmlDoc.getAttribute('data-theme') === 'light') {
+            themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = htmlDoc.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            htmlDoc.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggleBtn.innerHTML = newTheme === 'light' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+        });
+    </script>
+</body>
+</html>

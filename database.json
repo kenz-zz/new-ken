@@ -1,0 +1,102 @@
+{
+  "monetloader": {
+    "monetloader-invisible": {
+      "title": "Monetloader Invisible",
+      "visibility": "Public",
+      "cover": "https://youtu.be/qh1w8Xt3Lgo?si=VpLaUSSkMwvhlgT4",
+      "uploaded": "4 Jul 2024"
+    },
+    "monetloader-aimlock": {
+      "title": "Monetloader Aimlock",
+      "visibility": "Public",
+      "cover": "https://youtu.be/PFcQfQTTG1g?si=gMNaEYdmlHkT0Pz9",
+      "uploaded": "20 Jul 2024"
+    },
+    "monetloader-pengubah-posisi-tombol-voice": {
+      "title": "Monetloader Pengubah Posisi Tombol Voice",
+      "visibility": "Public",
+      "cover": "https://youtu.be/mMCZMB4ZiHM?si=i2petWiEnu2lMzgv",
+      "uploaded": "21 Jul 2024"
+    },
+    "monetloader-car-control": {
+      "title": "Monetloader Car Control",
+      "visibility": "Public",
+      "cover": "https://youtu.be/ce8XCpPy85U?si=i8Alh60u9ictapmz",
+      "uploaded": "18 Aug 2024"
+    },
+    "monetloader-troll-flip": {
+      "title": "Monetloader Troll Flip",
+      "visibility": "Public",
+      "cover": "https://youtu.be/WPH9RK1i0YY?si=QmSa7mE1dfSVyYrq",
+      "uploaded": "19 Aug 2024"
+    },
+    "monetloader-car-jumping": {
+      "title": "Monetloader Car Jumping",
+      "visibility": "Public",
+      "cover": "https://youtu.be/iqeUUjsPqZY?si=cvaMiBvprYNgRu4h",
+      "uploaded": "1 Sep 2024"
+    },
+    "monetloader-chat-off": {
+      "title": "Monetloader Chat Off",
+      "visibility": "Public",
+      "cover": "https://youtu.be/FtmkvtctPNs?si=xOpFlMrpngCf8S54",
+      "uploaded": "17 Nov 2024"
+    },
+    "monetloader-spectator": {
+      "title": "Monetloader Spectator",
+      "visibility": "Public",
+      "cover": "https://youtu.be/Pj9lSpAgza0?si=3XaKw13cdiGZ_BFW",
+      "uploaded": "24 Jan 2025"
+    },
+    "monetloader-autopilot": {
+      "title": "Monetloader Autopilot",
+      "visibility": "Public",
+      "cover": "https://youtu.be/DGO_eqppc7k?si=07BQsLZE0dVp2MAl",
+      "uploaded": "11 Feb 2025"
+    }
+  },
+  "cleo": {
+    "cleo-auto-driver": {
+      "title": "Cleo Auto Driver",
+      "visibility": "Public",
+      "cover": "https://youtu.be/WAVyDLjYNCU?si=OCq4KslkSBuMHP49",
+      "uploaded": "12 Jun 2024"
+    },
+    "cleo-anti-theft-car": {
+      "title": "Cleo Anti Theft Car",
+      "visibility": "Public",
+      "cover": "https://youtu.be/lb8LzmO2Cn0?si=IzdA3rC2SW5hNLG2",
+      "uploaded": "14 Jun 2024"
+    },
+    "cleo-lampu-neon": {
+      "title": "Cleo Lampu Neon",
+      "visibility": "Public",
+      "cover": "https://youtu.be/aEU3UBpuHg0?si=ozJaYk1Y5tbHxb5J",
+      "uploaded": "3 Jul 2024"
+    },
+    "cleo-unlimited-stamina": {
+      "title": "Cleo Unlimited Stamina",
+      "visibility": "Public",
+      "cover": "https://youtu.be/gDZcWBYAdWY?si=bUE9gee-Q4j_jqGI",
+      "uploaded": "10 Jul 2024"
+    },
+    "cleo-unlimited-nitro": {
+      "title": "Cleo Unlimited Nitro",
+      "visibility": "Public",
+      "cover": "https://youtu.be/K9zE391jWWY?si=XKyhR4zPGftiHtlv",
+      "uploaded": "28 Jul 2024"
+    },
+    "cleo-jump-car": {
+      "title": "Cleo Jump Car",
+      "visibility": "Public",
+      "cover": "https://youtu.be/D63gsq3l8yw?si=XE5rmJuq0pWF2Azg",
+      "uploaded": "17 Jan 2025"
+    },
+    "cleo-no-fuel": {
+      "title": "Cleo No Fuel",
+      "visibility": "Public",
+      "cover": "https://youtu.be/owT7WdtV4Wg?si=zc3AorWUH90g6dHg",
+      "uploaded": "2 Feb 2025"
+    }
+  }
+}
