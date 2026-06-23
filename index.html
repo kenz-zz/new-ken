@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzz samp</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar / Header -->
+    <header class="navbar">
+    <div class="nav-content" id="nav-content">
+        <a href="#" style="text-decoration: none; color: inherit;">
+    <h1 class="logo">Kenzz SAMP</h1>
+</a>
+ 
+        <div class="nav-actions">
+            <button id="theme-toggle" class="icon-btn" title="Change Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button id="search-btn" class="icon-btn" title="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="search-container hidden" id="search-container">
+    <div class="search-input-wrapper">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search..."
+        >
+    </div>
+
+    <button id="close-search" class="icon-btn">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+</div>
+    </header>
+
+    <!-- Category Bar (Pindahan dari Sidebar ke Horizontal Bar) -->
+    <nav class="category-bar">
+        <button class="cat-btn active" data-filter="all">All</button>
+        <button class="cat-btn" data-filter="monetloader">Monetloader</button>
+        <button class="cat-btn" data-filter="cleo">Cleo</button>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="content">
+        <div id="script-container" class="script-grid">
+            <!-- Data Script Card akan di-render otomatis oleh JavaScript di sini -->
+        </div>
+    </main>
+
+<footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Kenzz SAMP</h3>
+                <p>Monetloader, cleo, and resource for GTA SA-MP Android.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Community Rules</a>
+                <a href="#">DMCA</a>
+            </div>
+            <div class="footer-socials">
+                <a href="https://youtube.com/@KenzzYeTe" class="footer-socials yt" target="_blank" title="YouTube"><img src="https://cdn.simpleicons.org/youtube/white" alt="YouTube"></a>
+                <a href="#" class="footer-socials ig" target="_blank" title="Instagram"><img src="https://cdn.simpleicons.org/instagram/white" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@kenzzyete" class="footer-socials tt" target="_blank" title="TikTok"><img src="https://cdn.simpleicons.org/tiktok/white" alt="TikTok"></a>
+                <a href="https://discord.com/invite/SKCgURKkAt" class="footer-socials dc" target="_blank" title="Discord"><img src="https://cdn.simpleicons.org/discord" alt="Discord"></a>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Kenzz SAMP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "Wall Climbing System": {
+      "title": "Wall Climbing System",
+      "category": "cleo",
+      "cover": "https://example.com/cover-wall.jpg",
+      "filename": "wall-climbing-system.csa",
+      "created": "2025-12-27T20:11:04.368Z"
+    },
+    "Custom Hotbar": {
+      "title": "Custom Hotbar",
+      "category": "monetloader",
+      "cover": "https://example.com/cover-hotbar.jpg",
+      "filename": "custom-hotbar.lua",
+      "created": "2026-05-13T20:48:02Z"
+    }
+  }
+}
